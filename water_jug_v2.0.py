@@ -13,8 +13,8 @@ def empty(l):
 
 
 l=[0,0]
-c=list(map(int,input().split()))
-rs=int(input())
+c=list(map(int,input().split())) # read capacities of jugs
+rs=int(input())    # required amount of water
 while(1):
     if l[0]==0 and l[1]==0:
         l[0]=fill(l[0],c[0],0)
